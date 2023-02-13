@@ -84,6 +84,7 @@ label {
 	color: #bd301d;
 	font-weight: bold;
 	accent-color: #bd301d;
+	/* accent-color: violet; */
 }
 
 .radio:last-child {

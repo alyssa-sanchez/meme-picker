@@ -41,8 +41,14 @@ renderEmotionRadio(catsData)
 
 //target the event.data using change event
 emotionRadiosDisplay.addEventListener('change', highlightCheckedOption)
-
+//color the radio
 function highlightCheckedOption(e) {
+	//remove highlight
+	const radioArrays = document.getElementsByClassName('radio')
+	for (let radio of radioArrays) {
+		radio.classList.remove('highlight')
+	}
+	//add highlight
 	document
 		.getElementById(e.target.id)
 		.parentElement.classList.add('highlight')
